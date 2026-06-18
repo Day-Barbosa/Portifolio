@@ -502,7 +502,7 @@ header a:hover {
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.1rem;
 }
 
 #formulario label {
@@ -1017,4 +1017,41 @@ footer {
     font-weight: bold;
     color: var(--purple-800);
     margin-bottom: 0rem;
+}
+
+.projects-swiper {
+    overflow: hidden !important;
+    position: relative;
+    width: 100%;
+    padding: 0 40px !important;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    will-change: transform;
+}
+
+.projects-swiper .swiper-slide {
+    flex-shrink: 0 !important;
+    width: auto;
+}
+
+.swiper-button-next {
+    right: 10px !important;
+}
+
+.swiper-button-prev {
+    left: 10px !important;
+}
+
+/* Mensagens de validação do formulário (Padrão Cookbook) */
+#formulario span {
+    color: #e74c3c;          /* Vermelho destacado para indicar o erro */
+    font-size: 0.875rem;     /* Tamanho de fonte ligeiramente menor que o label */
+    display: block;          /* Move o span obrigatoriamente para a linha de baixo */
+    margin-top: 4px;         /* Espaçamento sutil entre o input e o texto do erro */
+    margin-bottom: 12px;     /* Espaço para o próximo campo respirar */
+    font-weight: 500;        /* Deixa o texto com um peso médio legível */
 }
